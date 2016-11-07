@@ -22,7 +22,7 @@ echo "Start packaging for $PLATFORM $ARCH."
 if [ $PLATFORM = "linux" ]; then
     APP_NAME="electronic-wechat"
 else
-    APP_NAME="猫球小子🐯微信"
+    APP_NAME="Polo WeChat"
 fi
 
 ignore_list="dist|scripts|\.idea|.*\.md|.*\.yml|node_modules/nodejieba"
