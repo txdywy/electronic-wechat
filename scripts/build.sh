@@ -22,7 +22,7 @@ echo "Start packaging for $PLATFORM $ARCH."
 if [ $PLATFORM = "linux" ]; then
     APP_NAME="electronic-wechat"
 else
-    APP_NAME="Electronic WeChat"
+    APP_NAME="猫球小子🐯微信"
 fi
 
 ignore_list="dist|scripts|\.idea|.*\.md|.*\.yml|node_modules/nodejieba"
@@ -34,6 +34,6 @@ if [ $? -eq 0 ]; then
 fi
 
 if [ $PLATFORM = "darwin" ]; then
-    ditto -rsrcFork ./dist/Electronic\ WeChat-darwin-x64/Electronic\ WeChat.app /Applications/Electronic\ WeChat.app
+    #ditto -rsrcFork ./dist/Electronic\ WeChat-darwin-x64/Electronic\ WeChat.app /Applications/Electronic\ WeChat.app
     echo "$(tput setaf 3)App copied to /Applications. You can open Electronic WeChat there or from Spotlight.$(tput sgr0)"
 fi
